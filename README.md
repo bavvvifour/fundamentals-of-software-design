@@ -1,5 +1,5 @@
 1) To launch the application, run: 
-- docker-compose up --build
+     - docker-compose up --build
 
 2) The application will be available on:
      - http://localhost:8080/api/bitcoin
