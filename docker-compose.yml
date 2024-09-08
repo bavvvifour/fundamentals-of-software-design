@@ -1,0 +1,9 @@
+services:
+  first-api-service:
+    image: first-api-service
+    container_name: first-api-service
+    build:
+      context: first-service-api
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:8080"
