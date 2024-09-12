@@ -7,3 +7,11 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - "8080:8080"
+  tg-bot-service:
+    image: tgtestbot:latest
+    container_name: telegramBot
+    build:
+      context: telegramBot
+      dockerfile: ./Dockerfile
+    env_file:
+      - telegramBot/.env
